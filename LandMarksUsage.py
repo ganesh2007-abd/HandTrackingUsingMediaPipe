@@ -30,7 +30,7 @@ while True:
             for id,lm in enumerate(handlmk.landmark):
                 h,w,c = img.shape
                 cx,cy=int(lm.x*w),int(lm.y*h)
-                print(id,lm)
+                # print(id,lm)
 
                 if(id==8):
                     cv.circle(img,(cx,cy),15,(0,255,0),cv.FILLED)
